@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: #4b4bec;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  background: transparent;
+}
+
+header>nav {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+
+}
+
+nav>ul {
+  padding: 0;
+  display: inline-block;
+
+}
+
+nav>ul>li {
+  list-style-type: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul>li>a {
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.container,
+.container>section {
+  width: 100%;
+  height: 100%;
+}
+
+.home-section,
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+
+
+.home-section h2 {
+  font-size: 28px;
+
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects-list figure {
+  width: 400px;
+
+}
+
+.projects-list figure img {
+  width: 100%;
+}
+
+.contact-section {
+  background-color: #4b4bec;
+}
+
+
+.about-section h2,
+.projects-section h2 {
+  margin-top: 62px;
+
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text {
+  text-align: justify;
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 400px;
+  padding: 4px;
+  margin: 5px;
+}
+
+.about-gallery {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 400px;
+  padding: 4px;
+  margin: 5px;
+
+}
+
+.about-gallery img {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.github,
+.linkedin,
+.twitter,
+.email,
+.phone {
+  width: 100px;
+  height: auto;
+}
+
+.contacts a {
+  padding: 10px 15px;
+}
+
+.contacts svg {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.contacts svg[aria-label="Github"]:hover {
+  border: 5px solid #333;
+}
+
+.contacts svg[aria-label="LinkedIn"]:hover {
+  border: 5px solid #0077b5;
+}
+
+.contacts svg[aria-label="Twitter"]:hover {
+  border: 5px solid #1da1f2;
+}
+
+.contacts svg[aria-label="Email"]:hover {
+  border: 5px solid #ea3e23;
+}
+
+.contacts svg[aria-label="Phone"]:hover {
+  border: 5px solid #25d366;
+}
+
+.contacts rect {
+  fill: transparent;
+}
+
+.sub-heading {
+  margin-top: 62px;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+  .home-section h2 {
+    font-size: 22px;
+
+  }
+
+
+}
+
+.hidden {
+  display: none;
+}
